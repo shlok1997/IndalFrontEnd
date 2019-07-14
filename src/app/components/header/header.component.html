@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg  ftco_navbar  ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" [routerLink]="['/']">Indal Group</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active dropdown" [ngClass]="{'active' : '' === currentPath }">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Indal Group of
+                        Companies</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <a [routerLink]="['/infra-and-interiors']" class="dropdown-item">Indal Infra &
+                            Interiors</a>
+                        <a [routerLink]="['/gruh-udyog']" class="dropdown-item">Indal Gruh Udyog</a>
+                        <a [routerLink]="['/red-carpet-productions']" class="dropdown-item">Red Carpet Productions</a>
+                        <a [routerLink]="['/project-iq']" class="dropdown-item">Indal ProjectIQ's</a>
+                        <a [routerLink]="['/club-holidays-pvt-ltd']" class="dropdown-item">Indal Club Holiday's Pvt.
+                            Ltd.</a>
+                    </div>
+                </li>
+                <li class="nav-item" [ngClass]="{'active' : 'about-us' === currentPath }"><a [routerLink]="['/about-us']" class="nav-link">About Us</a></li>
+                <li class="nav-item" [ngClass]="{'active' : 'contact-us' === currentPath }"><a [routerLink]="['/contact-us']" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
