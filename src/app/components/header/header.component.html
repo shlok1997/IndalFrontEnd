@@ -1,6 +1,10 @@
-<nav class="navbar navbar-expand-lg  ftco_navbar  ftco-navbar-light" id="ftco-navbar">
+<nav class="navbar navbar-expand-lg  ftco_navbar  " id="ftco-navbar">
+    <!-- ftco-navbar-light -->
     <div class="container">
-        <a class="navbar-brand" [routerLink]="['/']">Indal Group</a>
+        <a class="navbar-brand" [routerLink]="['/']">
+            <!-- Indal Group -->
+            <img src="./../../../assets/images/white-indal-group.png" width="150vw" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>
@@ -10,9 +14,10 @@
                     <a class="nav-link dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Indal Group of
                         Companies</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <a [routerLink]="['/infra-and-interiors']" class="dropdown-item">Indal Infra &
+                        <a [routerLink]="['/infra-and-interiors']" class="dropdown-item"> Indal Infra &
                             Interiors</a>
-                        <a [routerLink]="['/gruh-udyog']" class="dropdown-item">Indal Gruh Udyog</a>
+                        <a [routerLink]="['/gruh-udyog']" class="dropdown-item"><span class="element-hover">Indal Gruh
+                                Udyog</span> </a>
                         <a [routerLink]="['/red-carpet-productions']" class="dropdown-item">Red Carpet Productions</a>
                         <a [routerLink]="['/project-iq']" class="dropdown-item">Indal ProjectIQ's</a>
                         <a [routerLink]="['/club-holidays-pvt-ltd']" class="dropdown-item">Indal Club Holiday's Pvt.
